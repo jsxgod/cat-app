@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>Cat List</mat-card-title>
+  <mat-card-content>
+    <mat-action-list>
+      <button mat-list-item *ngFor="let cat of cats">
+        <img mat-list-avatar src="{{cat.giphyUrl}}" alt="{{cat.race}}">
+        <h3 mat-line>{{cat.race}}</h3>
+      </button>
+    </mat-action-list>
+  </mat-card-content>
+</mat-card>
